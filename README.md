@@ -11,6 +11,19 @@ Usage: ./script_name.sh <username>
 ## Required Permissions
 This script requires administrator (root) privileges since it uses the `sudo` command to read the `/etc/shadow` file.
 
+## How this script works???
+The script greps the username from the /etc/shadow file, where passwords are stored in hash format. The first three or four digits after the colon are the hash algorithm used.
+
+example : 
+
+    $1$ is MD5
+    $2a$ is Blowfish
+    $2y$ is Blowfish
+    $5$ is SHA-256
+    $6$ is SHA-512
+    $y$ is yescrypt
+
+
 ## Tools Used
 The script utilizes the John the Ripper tool to attempt password decryption. The password to be decrypted is stored in the `password.txt` file.
 
