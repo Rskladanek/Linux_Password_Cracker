@@ -29,8 +29,9 @@ The script utilizes the John the Ripper tool to attempt password decryption. The
 
 ## Instructions
 1. Install john : `sudo apt install john`
-2. Execute the script with user who has sudo privileges.
-3. Provide the username for which you want to attempt password decryption as the first argument.
+2. git clone https://github.com/Rskladanek/Linux_Password_Cracker.git
+3. Execute the script with user who has sudo privileges.
+4. ./Password_Cracker.sh `<username>`
 
 ## Security Warning
 Decrypting other users' passwords without their consent is illegal and a breach of privacy. This script should only be used for educational purposes or on your own test environment.
