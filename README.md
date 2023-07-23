@@ -6,7 +6,7 @@ This Bash script is designed to decrypt encrypted user passwords on a Linux syst
 ## Usage
 To use the script, provide the username as the first argument when executing the script.
 
-Usage: ./script_name.sh <username>
+Usage: ./Password_Cracker.sh <username>
 
 ## Required Permissions
 This script requires administrator (root) privileges since it uses the `sudo` command to read the `/etc/shadow` file.
@@ -38,7 +38,7 @@ Decrypting other users' passwords without their consent is illegal and a breach 
 ## Examples
 1. To decrypt the password for the user "Remigiusz":
 
-./script_name.sh Remigiusz
+./Password_Cracker.sh Remigiusz
 
 
 ## File Structure
